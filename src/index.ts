@@ -1,6 +1,5 @@
 import Tokens from "csrf";
 import { Request } from "express";
-import "express-session";
 import { MiddlewareFn } from "type-graphql";
 
 interface IContext {

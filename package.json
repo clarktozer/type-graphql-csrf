@@ -1,6 +1,6 @@
 {
     "name": "type-graphql-csrf-middleware",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "TypeGraphQL middleware for handling csrf tokens",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
