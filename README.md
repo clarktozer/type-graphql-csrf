@@ -23,7 +23,7 @@ npm install type-graphql-csrf-middleware
 yarn add type-graphql-csrf-middleware
 ```
 
-```bash
+```javascript
 import { ValidAntiForgeryToken } from "type-graphql-csrf-middleware";
 ```
 
