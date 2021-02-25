@@ -1,5 +1,9 @@
 # type-graphql-csrf-middleware
 
+![CI Status](https://img.shields.io/github/workflow/status/clarktozer/type-graphql-csrf-middleware/CI)
+[![npm version](https://img.shields.io/npm/v/type-graphql-csrf-middleware.svg)](https://www.npmjs.com/package/type-graphql-csrf-middleware)
+[![types included](https://badgen.net/npm/types/type-graphql-csrf-middleware)](https://www.npmjs.com/package/type-graphql-csrf-middleware)
+
 TypeGraphQL middleware for handling csrf tokens with an express server with express-sessions.
 
 Required Peer Dependencies:
