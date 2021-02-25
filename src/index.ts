@@ -22,7 +22,7 @@ export const ValidAntiForgeryToken = <T extends IContext>({
     const token = context.req.cookies[cookieKey];
     const secret = context.req.session[secretKey];
 
-    if (!secret || !tokens.verify(secret, token)) {
+    if (!token || !secret || !tokens.verify(secret, token)) {
         throw new Error(message);
     }
 
