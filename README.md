@@ -45,6 +45,22 @@ const addCsrf = (req: Request, res: Response, next: NextFunction) => {
 };
 ```
 
+You will also need to add the express Request object to the GraphQL context so that it can be used by the middleware. Here is an example using Apollo Server Express.
+
+```javascript
+const app = express();
+
+const server = new ApolloServer({
+    schema,
+    context: ({ req, res }) => ({ req, res })
+});
+
+server.applyMiddleware({
+    app,
+    path: "/api"
+});
+```
+
 ## Resolver Middleware Use
 
 The type-graphql middleware needs a cookie key and a session key that are used in your express route middleware function like the previous example in order to verify the token.
